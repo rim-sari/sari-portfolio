@@ -1,6 +1,8 @@
-@import "tailwindcss";
 @import url("https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=DM+Sans:wght@300;400;500&display=swap");
 @import "devicon/devicon.min.css";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 html {
   scroll-behavior: smooth;
@@ -518,7 +520,9 @@ section {
 
 /* SKILLS — individual item pause */
 /* SKILLS LOGO LOOP */
-.skills-bg { background: var(--bg2) }
+.skills-bg {
+  background: var(--bg2);
+}
 
 .skills-loop-wrap {
   overflow: hidden;
@@ -527,9 +531,10 @@ section {
 }
 .skills-loop-wrap::before,
 .skills-loop-wrap::after {
-  content: '';
+  content: "";
   position: absolute;
-  top: 0; bottom: 0;
+  top: 0;
+  bottom: 0;
   width: 100px;
   z-index: 2;
   pointer-events: none;
@@ -550,20 +555,27 @@ section {
   padding: 1rem 0;
   width: max-content;
 }
-.skills-loop-track.fwd { animation: marquee 30s linear infinite }
-.skills-loop-track.rev { animation: marquee 30s linear infinite reverse }
+.skills-loop-track.fwd {
+  animation: marquee 30s linear infinite;
+}
+.skills-loop-track.rev {
+  animation: marquee 30s linear infinite reverse;
+}
 
 .skill-logo-item {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: .55rem;
+  gap: 0.55rem;
   min-width: 82px;
-  padding: .9rem .8rem;
+  padding: 0.9rem 0.8rem;
   border-radius: 10px;
   border: 1px solid var(--border);
   background: var(--card);
-  transition: transform .3s, border-color .3s, box-shadow .3s;
+  transition:
+    transform 0.3s,
+    border-color 0.3s,
+    box-shadow 0.3s;
   cursor: default;
   flex-shrink: 0;
 }
@@ -574,14 +586,14 @@ section {
 }
 .skill-logo-item i {
   font-size: 2.1rem;
-  transition: filter .3s;
+  transition: filter 0.3s;
 }
 .skill-logo-item:hover i {
   filter: drop-shadow(0 0 6px var(--glow));
 }
 .skill-logo-item span {
-  font-size: .6rem;
-  letter-spacing: .06em;
+  font-size: 0.6rem;
+  letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--muted);
   font-weight: 600;

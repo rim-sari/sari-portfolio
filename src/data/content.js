@@ -23,14 +23,14 @@ export const projects = [
   {
     num: '01',
     title: 'JoBridge',
-    href: 'https://github.com/rim-sari/JoBridge',
+    href: "https://github.com/rim-sari/JoBridge",
     desc: 'A recrutement platform bridging candidates and companies turning it into one seamless experience.',
     chips: ['HTML', 'Java', 'SpringBoot', 'MySQL'],
   },
   {
     num: '02',
     title: 'Game Website',
-    href: 'https://rim-sari.github.io/tp-game-app/',
+    href: "https://rim-sari.github.io/tp-game-app/",
     desc: 'An interactive gaming platform with 3 games : Tic-Tac-Toe , Snake and Ping Pong .',
     chips: ['HTML', 'CSS', 'JS'],
   },
